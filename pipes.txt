@@ -1,0 +1,16 @@
+Pipes in angular take in an input and generate a desired output. Angular has several inbuilt pipes that we can use but
+ we can also make our own custom pipes : We can also chain pipes to extend the transformation of the input that we give to a pipe.
+
+ examples of inbuilt pipes include : date,uppercase ... look for more
+
+
+Creating Pipes
+$ ng generate pipe nameofPipe;
+
+A pipe file consists of the following
+
+imports
+@pipe annotation : has a property name : use this name to refer to pipe in HTML content.
+
+finally class defination : export etc. with a transform function which can take in any value.
+

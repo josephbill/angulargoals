@@ -1,0 +1,13 @@
+<!--without bootstrap-->
+<!--<p>-->
+<!--  {{goal.description}}-->
+<!--</p>-->
+<!--<p>This goal will be complete in {{goal.completeDate|dateCount}} days</p>-->
+
+<!--<button (click)= 'goalDelete(true)'>Delete Goal</button>-->
+<!-- with bootstrap -->
+<p>{{goal.description}}</p>
+<p>This goal will be complete in {{goal.completeDate|dateCount}} days</p>
+<!--emitting events from child component to parent component: this is how a child communicates with parent component-->
+<!-- deleting a goal once achieved -->
+<button (click)= 'goalDelete(true)' class="btn btn-outline-danger">Delete Goal</button>
