@@ -4,10 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href ./",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "deploy": "ng build --prod --base-href https://josephbill.github.io/Angular101/ && angular-cli-ghpages --branch gh-pages"
+    "test": "ng test"
 
   },
   "private": true,
