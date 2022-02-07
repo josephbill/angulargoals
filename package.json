@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --prod --base-href https://josephbill.github.io/Angular101/ && angular-cli-ghpages --branch gh-pages"
+
   },
   "private": true,
   "dependencies": {
@@ -39,4 +41,5 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.5"
   }
+
 }
