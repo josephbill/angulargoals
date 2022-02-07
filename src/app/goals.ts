@@ -8,5 +8,9 @@ export class Goals {
     this.showDescription = false;
   }
 
+  functionName(){
+
+  }
+
   //can we do constructor overloading //no
 }

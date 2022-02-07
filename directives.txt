@@ -8,12 +8,14 @@ Inbuilt directives
 2. ngIf's are conditional statements , checks if a certain condition is met if so performs an action
 3. ngOnInit is a lifecycle hook. {not directive}
 It is called each time the component is created. We use it to put complex initialization logic that we want for the component.
-
+4. ngModel : directive provided by the forms module to enable two way binding : basically the concept of checking changes in template
+and passing the same to the component.
+5. ngSubmit : this directive allows us to submit form data.
 
 Custom Directives
 1.Generate custom directives using $ ng generate directive nameofdirective
 2.When you create a directive it is has , 1. Imports 2. @Directive annotation with a selector property , this is the name used to
-refer to your custom directive in HTML elemets 3. The defination of the directive i.e. Logic involving the directive.
+refer to your custom directive in HTML elements 3. The definition of the directive i.e. Logic involving the directive.
 3. Inside the directive file ,
 import the ElementRef :The ElementRef grants us direct access to the host DOM element through its nativeElement property.
 4. To use a custom directive simply call the selector name for the directive in the element opening tag e.g.

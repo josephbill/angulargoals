@@ -32,5 +32,12 @@ through event based actions i.e. a click , a double click etc.
 This is done via use of the HostListener used to define the events that will be initiated by user actions e.g. @ strikethrough.directive.ts
 16. Add bootstrap using the command : $ npm install --save bootstrap popper then make it available globally in the project inside
 the styles.css file.
+17. Two way data binding : With two-way data binding, data moves from our template(the view)
+to our component class(the model) and vice versa. The essence is that when data changes on the template(view)
+it simultaneously changes in the component class(model) and if it also changes in the model,
+the view is automatically updated with the changes.
 
+The App.Module.ts file
+BreakDown :
+This file is the root module used by angular
 
