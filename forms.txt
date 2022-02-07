@@ -1,8 +1,0 @@
-1. Handle them by creating form components : ng generate components componentName
-2. To make forms work in angular , import the forms module to app.modules.ts
-3. Form Validation is handled using :
-    a. a reference variable in the template for each input , attribute [hidden] to hide errors before displaying them.
-    b. a property called pristine which allows us to hide the alert when we load a blank page.
-    check this example in the goal form html file
-
-4. to submit a form we use the directive called ngSubmit
