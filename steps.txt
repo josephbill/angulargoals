@@ -41,3 +41,16 @@ The App.Module.ts file
 BreakDown :
 This file is the root module used by angular
 
+: Services allow us to dedicate a class to work on a specific task
+  Service example i.e. quote-request.service.ts
+  generate a service using the cmd ng generate service serviceName
+  After creating a service remember to register it; inorder to give access.
+
+: Dependency injection is the concept of including an class with the constructor of another class, so that the later class can use
+the functionalities in class A to execute its own functionalities instead of creating new instances of class B.
+  Services allow this concept in Angular
+
+: HttpCLient : this module allows us to integrate API's in angular , ensure this module is declared in the root module of app ie. app.module.ts
+
+
+Routing
