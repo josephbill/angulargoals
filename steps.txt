@@ -45,6 +45,12 @@ This file is the root module used by angular
   Service example i.e. quote-request.service.ts
   generate a service using the cmd ng generate service serviceName
   After creating a service remember to register it; inorder to give access.
+  Three ways of registering  a service
+
+    In the metadata of the service ( in the @Injectable() decorator)
+    In the @NgModule() decorator (inside the app.module file, provider declaration [nameofservice])
+    In the @component() metadata (in the component where you want to inject the service, provider[nameofService])
+
 
 : Dependency injection is the concept of including an class with the constructor of another class, so that the later class can use
 the functionalities in class A to execute its own functionalities instead of creating new instances of class B.
@@ -54,3 +60,29 @@ the functionalities in class A to execute its own functionalities instead of cre
 
 
 Routing
+In Angular, routing enables us to navigate from one view to another.
+Example uses the navigation links to go to About component
+
+-To implement routing in Angular, we use a module known as the AppRoutingModule.
+-We import it and feed it with simple instructions in the form of code and it does the navigation for us.
+-When you create an angular app , a routing module called app-routing.module is created
+-If not present generate one using the command
+  ng g module app-routing , inside app folder
+- A typical Angular route has two properties, a path which is a string that matches the URL in the browser address bar
+  and a component which is the component that the router should create when navigating to this route.
+- RouterOutlet is a directive of the RoutingModule that has a selector <router-outlet> which handles routing for us.
+   Let's use this selector and put the router in charge of displaying different views.
+   Inside the app.component.html declare the <router-outlet></router-outlet> tags in place of default component
+   also in the app.modulde.ts file, add the following in providers property
+     providers: [{provide: APP_BASE_HREF, useValue: '/'}],
+- when u create the routes and have links to take user to different pages here we use
+  RouterLink  : e.g navbar component example
+
+
+
+404 pages
+example in not-found component
+
+
+Passing parameters
+

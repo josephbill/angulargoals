@@ -1,5 +1,7 @@
 <!--with bootstrap-->
 <div class="container">
+<!--  progress bar to show user something is happening i.e. taking data from api-->
+  <ng-progress></ng-progress>
   <h1>My Goals</h1>
   <hr>
 
@@ -9,11 +11,12 @@
         <div>
           <h4 id={{i}} appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</h4>
           <h3>Goal CountDown is {{goal.completeDate|dateCount}}</h3>
+          <button class="btn btn-primary" (click)='goToUrl(goal.id)'>View Details</button>
           <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
         </div>
 
         <div *ngIf='goal.showDescription'>
-          <app-goal-details  [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-details>
+<!--          <app-goal-details  [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-details>-->
         </div>
 
 
@@ -27,6 +30,12 @@
   </div>
 
   <p *ngIf='goals.length > 5'>You have too many goals</p>
+  <div class="row">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">{{quote.quote}}</p>
+      <footer class="blockquote-footer"><cite>{{quote.author}}</cite></footer>
+    </blockquote>
+  </div>
 </div>
 <!--without bootstrap-->
 <!--<h1>My Goals</h1>-->
